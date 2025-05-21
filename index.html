@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="google-site-verification" content="EDI50XA_JpcjS9z_LM5pF_9pVA0_AHLO9Vusxe3MCbc" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robotech Magazine</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Swiper CSS -->
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <body>
+
 <section class="a-la-une">
   <div class="headline-banner">
     <h2>À la Une</h2>
@@ -48,6 +48,8 @@
   </div>
 </section>
 
+<!-- Swiper JS placé ici, APRÈS le HTML -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
@@ -72,7 +74,6 @@
     },
   });
 </script>
-
 
 </body>
 </html>
