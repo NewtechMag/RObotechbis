@@ -75,35 +75,5 @@
 </script>
 
 
-  <script>
-  const cards = document.querySelectorAll('.carousel-card');
-  const nextBtn = document.querySelector('.carousel-btn.next');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-
-  let index = 0;
-  const cardWidth = cards[0].offsetWidth + 20; // card width + gap
-
-  function moveToIndex(i) {
-    track.style.transform = `translateX(-${i * cardWidth}px)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % cards.length;
-    moveToIndex(index);
-  });
-
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + cards.length) % cards.length;
-    moveToIndex(index);
-  });
-
-  // Auto-scroll every 5 seconds
-  setInterval(() => {
-    index = (index + 1) % cards.length;
-    moveToIndex(index);
-  }, 5000);
-</script>
-
-
 </body>
 </html>
