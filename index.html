@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robotech Magazine - Logo avec robot animé</title>
 </head>
+<body>
   <!-- SECTION À LA UNE MODERNE -->
 <section class="a-la-une">
   <div class="headline-banner">
-    <h2>\u00c0 la Une</h2>
+    <h2>à la Une</h2>
+  </div>
+<!-- SECTION À LA UNE MODERNE -->
+<section class="a-la-une">
+  <div class="headline-banner">
+    <h2>À la Une</h2>
   </div>
 
   <div class="carousel-wrapper">
@@ -47,114 +53,6 @@
   </div>
 </section>
 
-  <style>
-    body, html {
-      margin: 0; padding: 0; height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
-      display: flex; justify-content: center; align-items: center;
-      color: #fff;
-    }
-
-    .logo-container {
-      position: relative;
-      text-align: center;
-      width: 400px;
-      height: 160px;
-      animation: fadeSlideIn 1.2s ease forwards;
-      opacity: 0; transform: translateY(30px);
-    }
-
-    @keyframes fadeSlideIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Conteneur de l’animation Lottie */
-    .lottie-background {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 200px;
-      height: 200px;
-      transform: translate(-50%, -50%);
-      opacity: 0.18;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .logo {
-      position: relative;
-      font-weight: 900;
-      font-size: 3.5rem;
-      z-index: 10;
-      display: inline-block;
-    }
-
-    /* ROBO blanc simple */
-    .logo-part-new {
-      color: #ffffff;
-      font-style: normal;
-    }
-
-    /* TECH bleu néon animé */
-    .logo-part-tech {
-      font-style: italic;
-      letter-spacing: 0.15em;
-      background: linear-gradient(270deg, #00ffff, #0055ff, #00ffff);
-      background-size: 600% 600%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: neonGradient 8s ease infinite;
-      text-shadow:
-        0 0 5px #00ffff,
-        0 0 10px #00ffff,
-        0 0 20px #0055ff,
-        0 0 30px #00ffff,
-        0 0 40px #00ffff;
-    }
-
-    @keyframes neonGradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .logo-subtitle {
-      margin-top: 0.3em;
-      font-weight: 400;
-      font-size: 1rem;
-      font-style: italic;
-      background: linear-gradient(90deg, #ff80ab, #ffc107);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-      z-index: 10;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="logo-container">
-    <div id="lottie" class="lottie-background"></div>
-    <div class="logo">
-      <span class="logo-part-new">ROBO</span><span class="logo-part-tech">TECH</span>
-    </div>
-    <div class="logo-subtitle">L'OFFICIEL DE L'INTELLIGENCE TECHNIQUE ET CRÉATIVE</div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-  <script>
-    const animation = lottie.loadAnimation({
-      container: document.getElementById('lottie'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'https://assets3.lottiefiles.com/packages/lf20_6d1vj7zm.json'
-    });
-  </script>
 
 </body>
 </html>
