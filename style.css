@@ -1,4 +1,3 @@
-/* SECTION À LA UNE */
 .a-la-une {
   padding: 60px 0;
   background: linear-gradient(to bottom right, #0a0f1c, #1b1f30);
@@ -13,7 +12,6 @@
   margin-bottom: 30px;
 }
 
-/* SWIPER CONTAINER */
 .mySwiper {
   width: 100%;
   max-width: 1000px;
@@ -22,7 +20,6 @@
   position: relative;
 }
 
-/* SWIPER SLIDES */
 .swiper-slide {
   width: 300px;
   height: 400px;
@@ -32,10 +29,9 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   position: relative;
-  flex-shrink: 0; /* important avec slidesPerView: "auto" */
+  flex-shrink: 0;
 }
 
-/* CONTENU SUR CHAQUE SLIDE */
 .slide-content {
   position: absolute;
   bottom: 0;
@@ -56,7 +52,6 @@
   font-size: 1rem;
 }
 
-/* FLÈCHES DE NAVIGATION */
 .swiper-button-next,
 .swiper-button-prev {
   color: #00eaff;
