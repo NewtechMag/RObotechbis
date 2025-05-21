@@ -1,109 +1,61 @@
 .a-la-une {
+  padding: 60px 0;
   background: linear-gradient(to bottom right, #0a0f1c, #1b1f30);
-  padding: 50px 0;
   color: white;
   font-family: 'Orbitron', sans-serif;
-  position: relative;
 }
 
 .headline-banner h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
   color: #00ffff;
-  animation: fadeInUp 1s ease-out forwards;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
-.carousel-wrapper {
-  max-width: 1000px;
+/* Swiper */
+.mySwiper {
+  width: 90%;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
+  border-radius: 20px;
   overflow: hidden;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  gap: 20px;
-}
-
-.carousel-card {
-  flex: 0 0 300px;
-  height: 400px;
+.swiper-slide {
   background-size: cover;
   background-position: center;
-  border-radius: 20px;
+  height: 500px;
   position: relative;
-  scroll-snap-align: start;
-  text-decoration: none;
-  color: white;
-  transition: transform 0.5s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-}
-
-.carousel-card:hover {
-  transform: scale(1.05) rotateZ(1deg);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
-}
-
-.card-content {
-  position: absolute;
-  bottom: 0;
-  padding: 20px;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
-  border-radius: 0 0 20px 20px;
-}
-
-.article-themes {
   display: flex;
-  gap: 10px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.slide-content {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.slide-content h3 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #00ffff;
 }
 
-.article-theme {
-  background: #00ffff;
-  color: #000;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.75rem;
+.slide-content p {
+  font-size: 1rem;
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 255, 255, 0.3);
-  color: #fff;
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s;
+/* Flèches Swiper */
+.swiper-button-next, .swiper-button-prev {
+  color: #00ffff;
+  transition: transform 0.3s ease;
 }
 
-.carousel-btn:hover {
-  background: rgba(0, 255, 255, 0.6);
-}
-
-.carousel-btn.prev {
-  left: -10px;
-}
-
-.carousel-btn.next {
-  right: -10px;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  transform: scale(1.3);
 }
