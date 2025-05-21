@@ -6,52 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robotech Magazine</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
-<body><section class="a-la-une">
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body>
+<section class="a-la-une">
   <div class="headline-banner">
     <h2>À la Une</h2>
   </div>
 
-  <div class="carousel-wrapper">
-    <button class="carousel-btn prev">&#10094;</button>
-    
-    <div class="carousel-track" id="carousel-track">
-      <a href="article-wandercraft.html" class="carousel-card" style="background-image: url('Wandercraft exosquelette1.webp');">
-        <div class="card-content">
-          <div class="article-themes">
-            <div class="article-theme">Robotique</div>
-            <div class="article-theme">Santé</div>
-          </div>
-          <h3>Wandercraft et NVIDIA s'allient au service de la mobilité</h3>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('Wandercraft exosquelette1.webp');">
+        <div class="slide-content">
+          <h3>Wandercraft et NVIDIA s'allient</h3>
           <p>La société française franchit une étape décisive</p>
         </div>
-      </a>
+      </div>
 
-      <a href="article-DHLxBostonDynamics.html" class="carousel-card" style="background-image: url('dhl-boston-dynamics.jpg');">
-        <div class="card-content">
-          <div class="article-themes">
-            <div class="article-theme">Robotique</div>
-            <div class="article-theme">Industrie</div>
-          </div>
-          <h3>DHL et Boston Dynamics accélèrent leur partenariat</h3>
-          <p>DHL achète plus de 1 000 robots Stretch à Boston Dynamics</p>
+      <div class="swiper-slide" style="background-image: url('dhl-boston-dynamics.jpg');">
+        <div class="slide-content">
+          <h3>DHL et Boston Dynamics</h3>
+          <p>Plus de 1 000 robots Stretch pour automatiser</p>
         </div>
-      </a>
+      </div>
 
-      <a href="article-pingpongbot.html" class="carousel-card" style="background-image: url('PingPongRobot.jpg');">
-        <div class="card-content">
-          <div class="article-themes">
-            <div class="article-theme">Robotique</div>
-          </div>
-          <h3>Le ping pong bot du MIT</h3>
-          <p>Quand un robot joue au ping-pong avec la précision d’un pro</p>
+      <div class="swiper-slide" style="background-image: url('PingPongRobot.jpg');">
+        <div class="slide-content">
+          <h3>Ping-pong Bot du MIT</h3>
+          <p>Un robot avec la précision d’un pro</p>
         </div>
-      </a>
+      </div>
     </div>
 
-    <button class="carousel-btn next">&#10095;</button>
+    <!-- Flèches -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
+
 
 
   <script>
